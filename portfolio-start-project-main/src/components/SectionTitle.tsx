@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { Theme } from "../styles/Theme";
+import { theme } from "../styles/Theme";
 
 export const SectionTitle = styled.h2`
     text-align: center;
@@ -8,6 +8,7 @@ export const SectionTitle = styled.h2`
     font-weight: 600;
     letter-spacing: 5px;
 
+    margin-top: 0;
     margin-bottom: 90px;
     position: relative;
 
@@ -16,7 +17,7 @@ export const SectionTitle = styled.h2`
         display: inline-block;
         width: 55px;
         height: 1px;
-        background-color: ${Theme.colors.accent};
+        background-color: ${theme.colors.accent};
         position: absolute;
         left: 50%;
         bottom: -30px;

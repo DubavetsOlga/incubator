@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Theme } from "../../../styles/Theme";
+import { theme } from "../../../styles/Theme";
 
 export const HeaderMenu = (props: { menuItems: Array<string> }) => {
     return (
@@ -49,7 +49,7 @@ const Mask = styled.span`
     display: inline-block;
     height: 50%;
     overflow: hidden;
-    color: ${Theme.colors.accent};
+    color: ${theme.colors.accent};
 
     & + & {
         top: 50%;
@@ -67,7 +67,7 @@ const ListItem = styled.li`
         content: "";
         display: inline-block;
         height: 3px;
-        background-color: ${Theme.colors.accent};
+        background-color: ${theme.colors.accent};
 
         position: absolute;
         top: 50%;
@@ -85,7 +85,7 @@ const ListItem = styled.li`
 
         ${Mask} {
             transform: skewX(12deg) translateX(5px);
-            color: ${Theme.colors.font};
+            color: ${theme.colors.font};
 
             & + ${Mask} {
                 transform: skewX(12deg) translateX(-5px);

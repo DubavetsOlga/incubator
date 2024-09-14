@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { FlexWrapper } from "../FlexWrapper";
-import { Theme } from "../../styles/Theme";
+import { theme } from "../../styles/Theme";
 
 export const Slider = () => {
     return (
@@ -64,7 +64,7 @@ const Pagination = styled.div`
         }
 
         &.active {
-            background-color: ${Theme.colors.accent};
+            background-color: ${theme.colors.accent};
             width: 20px;
         }
     }

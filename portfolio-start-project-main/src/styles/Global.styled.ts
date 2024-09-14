@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import { Theme } from "./Theme";
+import { theme } from "./Theme";
 
 export const GlobalStyle = createGlobalStyle`
     *б
@@ -17,7 +17,7 @@ export const GlobalStyle = createGlobalStyle`
             sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        color: ${Theme.colors.font};
+        color: ${theme.colors.font};
         line-height: 1.2;
     }
 
@@ -39,10 +39,10 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     section:nth-of-type(odd) {
-        background-color: ${Theme.colors.primaryBg};
+        background-color: ${theme.colors.primaryBg};
     }
 
     section:nth-of-type(even) {
-        background-color: ${Theme.colors.secondaryBg};
+        background-color: ${theme.colors.secondaryBg};
     }
 `;
