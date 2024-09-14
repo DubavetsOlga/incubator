@@ -23,10 +23,12 @@ export const GlobalStyle = createGlobalStyle`
 
     a {
         text-decoration: none;
+        cursor: pointer;
     }
 
     ul {
         list-style: none;
+        padding: 0;
     }
 
     button {

@@ -41,7 +41,7 @@ const Text = styled.p`
 `;
 
 const Name = styled.span`
-    font-family: Josefin Sans, sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     font-size: 16px;
     font-weight: 600;
     letter-spacing: 1px;

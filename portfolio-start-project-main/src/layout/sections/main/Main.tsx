@@ -35,7 +35,7 @@ const SmallText = styled.h2`
 `;
 
 const Name = styled.h2`
-    font-family: Josefin Sans, sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     font-size: 50px;
     font-weight: 700;
     letter-spacing: 0.05em;
