@@ -35,9 +35,7 @@ const Slide = styled.div`
 `;
 
 const Text = styled.p`
-    font-size: 14px;
-    font-weight: 400;
-    margin: 0;
+
 `;
 
 const Name = styled.span`
