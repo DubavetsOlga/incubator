@@ -1,9 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { theme } from "../../../../styles/Theme";
 import { Link } from "../../../../components/Link";
 
-export const TabMenu = (props: { menuItems: Array<string> }) => {
+export const TabMenu: React.FC<{ menuItems: Array<string> }> = (props: { menuItems: Array<string> }) => {
     return (
         <StyledTabMenu>
             <ul>
@@ -30,6 +29,5 @@ const StyledTabMenu = styled.nav`
 `;
 
 const ListItem = styled.li`
-    /*position: relative;
-    z-index: 0;*/
+
 `;
