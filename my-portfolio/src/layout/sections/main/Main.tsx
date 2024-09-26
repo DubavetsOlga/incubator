@@ -8,7 +8,7 @@ export const Main: React.FC = () => {
     return (
         <S.Main>
             <Container>
-                <FlexWrapper align={"center"} justify={"space-around"} wrap={"wrap"}>
+                <FlexWrapper align={"center"} justify={"space-between"} wrap={"wrap"}>
                     <S.Text>
                         Hi 👋, <br/>
                         My name is<br/>
