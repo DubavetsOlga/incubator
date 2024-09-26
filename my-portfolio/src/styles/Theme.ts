@@ -4,15 +4,16 @@ export const theme = {
         secondaryBg: "#252527",
         accent: "#7572D5",
 
-        font: "#FFFFFF",
-        placeholderColor: "#495057",
+        font: "#CCCCCC",
+        secondFont: "#A7A7A7",
+        /*placeholderColor: "#495057",
 
-        borderColor: "#4A4A4A",
+        borderColor: "#4A4A4A",*/
     },
 
     media: {
         tablet: "screen and (max-width: 750px)",
         mobile: "screen and (max-width: 576px)",
-        desktop: "screen and (min-width: 1140px)",
+        desktop: "screen and (min-width: 1220px)",
     },
 }

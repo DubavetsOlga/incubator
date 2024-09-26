@@ -13,7 +13,6 @@ const Email = styled.span`
     font-family: "DM Sans", sans-serif;
     font-size: 58px;
     font-weight: 700;
-    line-height: 70px;
     letter-spacing: -1px;
     text-align: center;
 

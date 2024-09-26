@@ -7,7 +7,6 @@ const Main = styled.section`
 const Text = styled.p`
     font-size: 58px;
     font-weight: 700;
-    line-height: 70px;
     letter-spacing: -1px;
 
     max-width: 636px;

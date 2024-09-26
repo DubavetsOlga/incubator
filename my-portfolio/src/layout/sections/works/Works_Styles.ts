@@ -34,7 +34,6 @@ const Title = styled.h3`
     font-size: 28px;
     font-weight: 500;
     line-height: 26px;
-    color: #CCCCCC;
 `;
 
 const Text = styled.p`
@@ -42,7 +41,6 @@ const Text = styled.p`
     font-size: 18px;
     font-weight: 300;
     line-height: 26px;
-    color: #CCCCCC;
 `;
 
 const Description = styled.div`
@@ -53,7 +51,6 @@ const Stack = styled.span`
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
-    color: #CCCCCC;
 `;
 
 export const S = {

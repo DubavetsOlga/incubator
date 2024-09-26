@@ -27,20 +27,20 @@ export const GlobalStyle = createGlobalStyle`
     a {
         text-decoration: none;
         cursor: pointer;
-        color: ${theme.colors.font}
+        color: ${theme.colors.secondFont}
     }
 
     ul {
         list-style: none;
         padding: 0;
     }
-
+/*
     button {
         background-color: unset;
         border: none;
         cursor: pointer;
         color: ${theme.colors.font};
-    }
+    }*/
 
     section {
         padding: 90px 0;
@@ -51,15 +51,14 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     h3 {
-        font-family: "Josefin Sans", sans-serif;
-        font-size: 16px;
-        font-weight: 700;
-        letter-spacing: 1px;
+        font-size: 32px;
+        font-weight: 400;
+        color: ${theme.colors.secondFont};
     }
-
+/*
     p {
         font-size: 14px;
         font-weight: 400;
         line-height: 1.4;
-    }
+    }*/
 `;

@@ -9,7 +9,6 @@ const Link = styled.a`
     font-weight: 500;
     line-height: 26px;
     text-align: center;
-    color: #A7A7A7;
 `;
 
 const MenuItem = styled.li`

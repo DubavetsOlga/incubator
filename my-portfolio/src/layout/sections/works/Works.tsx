@@ -6,6 +6,11 @@ import { FlexWrapper } from "../../../components/FlexWrapper";
 import { SectionInfo } from "../../../components/SectionInfo";
 import { Work } from "./work/Work";
 import workImg from "./../../../assets/images/work.png";
+import workImg2 from "./../../../assets/images/work2.png";
+import workImg3 from "./../../../assets/images/work3.png";
+import workImg4 from "./../../../assets/images/work4.png";
+import workImg5 from "./../../../assets/images/work5.png";
+import workImg6 from "./../../../assets/images/work6.png";
 
 const workData = [
     {
@@ -16,31 +21,31 @@ const workData = [
     },
     {
         title: "Project Tile goes here",
-        scr: workImg,
+        scr: workImg2,
         techStack: "HTML , JavaScript, SASS, React",
         text: "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"
     },
     {
         title: "Project Tile goes here",
-        scr: workImg,
+        scr: workImg3,
         techStack: "HTML , JavaScript, SASS, React",
         text: "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"
     },
     {
         title: "Project Tile goes here",
-        scr: workImg,
+        scr: workImg4,
         techStack: "HTML , JavaScript, SASS, React",
         text: "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"
     },
     {
         title: "Project Tile goes here",
-        scr: workImg,
+        scr: workImg5,
         techStack: "HTML , JavaScript, SASS, React",
         text: "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"
     },
     {
         title: "Project Tile goes here",
-        scr: workImg,
+        scr: workImg6,
         techStack: "HTML , JavaScript, SASS, React",
         text: "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"
     },
