@@ -29,7 +29,7 @@ const Photo = styled.img`
     border: 9px solid #0000;
     border-radius: 230px;
     background:linear-gradient(180deg, #E70FAA 0%, #00C0FD 100%) border-box;
-    background-clip: border-area; /* The new added value */
+    background-clip: border-area;
 
     /*@media  {
         width: 310px;
