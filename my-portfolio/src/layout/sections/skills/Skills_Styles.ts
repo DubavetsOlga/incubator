@@ -4,14 +4,6 @@ const Skills = styled.section`
 
 `;
 
-const Text = styled.h3`
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 26px;
-    color: #A7A7A7;
-    padding-bottom: 140px;
-`;
-
 const Skill = styled.div`
     width: 120px;
     height: 120px;
@@ -21,6 +13,5 @@ const Skill = styled.div`
 
 export const S = {
     Skills,
-    Text,
     Skill,
 }

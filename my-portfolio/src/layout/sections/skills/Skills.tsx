@@ -4,6 +4,7 @@ import { S } from "./Skills_Styles"
 import { SectionTitle } from "../../../components/SectionTitle";
 import { FlexWrapper } from "../../../components/FlexWrapper";
 import { Icon } from "../../../components/icon/Icon";
+import { SectionInfo } from "../../../components/SectionInfo";
 
 const skillData = [
     { iconId: "code", },
@@ -25,7 +26,7 @@ export const Skills: React.FC = () => {
             <Container>
                 <FlexWrapper align={"center"} direction="column">
                     <SectionTitle>My Tech Stack</SectionTitle>
-                    <S.Text>Technologies I’ve been working with recently</S.Text>
+                    <SectionInfo>Technologies I’ve been working with recently</SectionInfo>
                     <FlexWrapper align="center" wrap="wrap" justify="space-around">
                         {skillData.map((s, index) => {
                             return <S.Skill>
