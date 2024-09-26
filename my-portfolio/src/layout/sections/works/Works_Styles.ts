@@ -13,6 +13,7 @@ const Works = styled.section`
 const Work = styled.div`
     width: 30%;
     flex-grow: 1;
+    min-width: 300px;
 
     border-radius: 20px;
     box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2);
