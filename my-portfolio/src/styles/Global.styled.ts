@@ -20,6 +20,8 @@ export const GlobalStyle = createGlobalStyle`
         color: ${theme.colors.font};
         line-height: 1.2;
         min-width: 360px;
+        background-color: #191919;
+        ;
     }
 
     a {
@@ -46,14 +48,6 @@ export const GlobalStyle = createGlobalStyle`
         @media ${theme.media.mobile} {
             padding: 80px 0;
         }
-    }
-
-    section:nth-of-type(odd) {
-        background-color: ${theme.colors.primaryBg};
-    }
-
-    section:nth-of-type(even) {
-        background-color: ${theme.colors.secondaryBg};
     }
 
     h3 {
