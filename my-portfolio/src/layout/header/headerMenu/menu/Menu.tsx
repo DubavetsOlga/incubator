@@ -1,5 +1,6 @@
 import React from "react";
 import { S } from "./../HeaderMenu_Styles"
+import { Socials } from "../../../../components/socials/Socials";
 
 export const Menu: React.FC< { menuItems: Array<string> }> = (props: { menuItems: Array<string> }) => {
     return (
@@ -13,6 +14,7 @@ export const Menu: React.FC< { menuItems: Array<string> }> = (props: { menuItems
                     </S.MenuItem>
                 )
             })}
+            <S.MenuItem><Socials/></S.MenuItem>
         </ul>
     )
 };

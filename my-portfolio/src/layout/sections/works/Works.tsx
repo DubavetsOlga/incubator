@@ -5,12 +5,12 @@ import { S } from "./Works_Styles"
 import { FlexWrapper } from "../../../components/FlexWrapper";
 import { SectionInfo } from "../../../components/SectionInfo";
 import { Work } from "./work/Work";
-import workImg from "./../../../assets/images/work.png";
-import workImg2 from "./../../../assets/images/work2.png";
-import workImg3 from "./../../../assets/images/work3.png";
-import workImg4 from "./../../../assets/images/work4.png";
-import workImg5 from "./../../../assets/images/work5.png";
-import workImg6 from "./../../../assets/images/work6.png";
+import workImg from "./../../../assets/images/works/work.png";
+import workImg2 from "./../../../assets/images/works/work2.png";
+import workImg3 from "./../../../assets/images/works/work3.png";
+import workImg4 from "./../../../assets/images/works/work4.png";
+import workImg5 from "./../../../assets/images/works/work5.png";
+import workImg6 from "./../../../assets/images/works/work6.png";
 
 const workData = [
     {

@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { theme } from "../../../styles/Theme";
 
 const Main = styled.section`
 
@@ -10,6 +11,10 @@ const Text = styled.p`
     letter-spacing: -1px;
 
     max-width: 636px;
+
+    @media ${theme.media.mobile} {
+        font-size: 36px;
+    }
 `;
 
 const Name = styled.span`
@@ -30,10 +35,10 @@ const Photo = styled.img`
     background:linear-gradient(180deg, #E70FAA 0%, #00C0FD 100%) border-box;
     background-clip: border-area;
 
-    /*@media  {
-        width: 310px;
-        height: 380px;
-    }*/
+    @media ${theme.media.tablet} {
+        width: 300px;
+        height: 300px;
+    }
 `;
 
 export const S = {

@@ -1,7 +1,7 @@
 import React  from "react";
 import { S } from "./Main_Styles"
 import { Container } from "../../../components/Container";
-import photo from "../../../assets/images/myphoto.jpg";
+import photo from "../../../assets/images/myphoto4.png";
 import { FlexWrapper } from "../../../components/FlexWrapper";
 
 export const Main: React.FC = () => {
