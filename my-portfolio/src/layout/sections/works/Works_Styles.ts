@@ -19,6 +19,13 @@ const Work = styled.div`
     box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2);
     background: rgb(54, 54, 54);
 
+    a {
+        color: white;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+
     @media ${theme.media.desktop} {
         max-width: 375px;
     }
@@ -54,6 +61,12 @@ const Stack = styled.span`
     line-height: 26px;
 `;
 
+const Stacks = styled.span`
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 26px;
+`;
+
 export const S = {
     Works,
     Work,
@@ -61,5 +74,6 @@ export const S = {
     Title,
     Text,
     Description,
-    Stack
+    Stack,
+    Stacks
 }

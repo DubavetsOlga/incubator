@@ -1,6 +1,8 @@
 import React  from "react";
 import { Button } from "../../../../components/Button";
 import { S } from "./../Works_Styles"
+import { FlexWrapper } from "../../../../components/FlexWrapper";
+import { Icon } from "../../../../components/icon/Icon";
 
 type WorkPropsType = {
     title: string;
@@ -16,10 +18,12 @@ export const Work: React.FC<WorkPropsType> = (props: WorkPropsType) => {
             <S.Description>
                 <S.Title>{props.title}</S.Title>
                 <S.Text>{props.text}</S.Text>
-                <S.Stack>Tech stack : {props.techStack}</S.Stack>
+                <S.Stack>Tech stack : <S.Stacks>{props.techStack}</S.Stacks></S.Stack>
                 <br/>
-                <a href={"#"}>Live Preview</a>
-                <a href={"#"}>View Code</a>
+                <FlexWrapper justify="space-between">
+                    <a href={"#"}><Icon width="20" height="20" viewBox="0 0 20 20" iconId="git"/>Live Preview</a>
+                    <a href={"#"}><Icon width="20" height="20" viewBox="0 0 20 20" iconId="git"/>View Code</a>
+                </FlexWrapper>
             </S.Description>
         </S.Work>
     );
