@@ -30,7 +30,7 @@ const SocialLink = styled.a`
     width: 35px;
     height: 35px;
     color: ${theme.colors.accent};
-
+    transition: ${theme.animations.transition};
     display: flex;
     justify-content: center;
     align-items: center;
