@@ -14,7 +14,9 @@ export const Menu: React.FC< { menuItems: Array<string> }> = (props: { menuItems
                     </S.MenuItem>
                 )
             })}
-            <S.MenuItem><Socials/></S.MenuItem>
+            <S.MenuItem>
+                <Socials/>
+            </S.MenuItem>
         </ul>
     )
 };
