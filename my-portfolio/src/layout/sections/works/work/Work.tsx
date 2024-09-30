@@ -21,8 +21,8 @@ export const Work: React.FC<WorkPropsType> = (props: WorkPropsType) => {
                 <S.Stack>Tech stack : <S.Stacks>{props.techStack}</S.Stacks></S.Stack>
                 <br/>
                 <FlexWrapper justify="space-between">
-                    <a href={"#"}><Icon width="20" height="20" viewBox="0 0 20 20" iconId="git"/>Live Preview</a>
-                    <a href={"#"}><Icon width="20" height="20" viewBox="0 0 20 20" iconId="git"/>View Code</a>
+                    <a href={"#"}><Icon width="20" height="20" viewBox="0 0 20 20" iconId="link"/> Live Preview</a>
+                    <a href={"#"}><Icon width="20" height="20" viewBox="0 0 30 30" iconId="github"/> View Code</a>
                 </FlexWrapper>
             </S.Description>
         </S.Work>

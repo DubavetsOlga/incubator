@@ -5,8 +5,8 @@ const Skills = styled.section`
 `;
 
 const Skill = styled.div`
-    width: 120px;
-    height: 120px;
+   /* width: 120px;
+    height: 120px;*/
     gap: 120px;
     display: flex;
 `;

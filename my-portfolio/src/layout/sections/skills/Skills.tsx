@@ -7,17 +7,18 @@ import { Icon } from "../../../components/icon/Icon";
 import { SectionInfo } from "../../../components/SectionInfo";
 
 const skillData = [
-    { iconId: "code", },
-    { iconId: "code",  },
-    { iconId: "code", },
-    { iconId: "code", },
-    { iconId: "code", },
-    { iconId: "code", },
-    { iconId: "code", },
-    { iconId: "code", },
-    { iconId: "code", },
-    { iconId: "code", },
-    { iconId: "code", },
+    { iconId: "html", },
+    { iconId: "css",  },
+    { iconId: "js", },
+    { iconId: "react", },
+    { iconId: "redux", },
+    { iconId: "bootstrap", },
+    { iconId: "git", },
+    { iconId: "typescript", },
+    { iconId: "styledcomponents", }, //40 40 120 120
+    { iconId: "figma", },
+    { iconId: "materialui" },
+    { iconId: "saas" },
 ];
 
 export const Skills: React.FC = () => {
