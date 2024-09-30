@@ -1,6 +1,7 @@
 import React from "react";
 import { Icon } from "../icon/Icon";
 import styled from "styled-components";
+import { theme } from "../../styles/Theme";
 
 export const Socials: React.FC = () => {
     return (
@@ -14,4 +15,8 @@ export const Socials: React.FC = () => {
 
 const List = styled.ul`
     gap: 20px!important;
+
+    a {
+        color: ${theme.colors.secondFont}
+    }
 `;

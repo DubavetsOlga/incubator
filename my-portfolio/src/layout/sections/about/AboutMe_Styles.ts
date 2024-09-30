@@ -3,10 +3,16 @@ import { theme } from "../../../styles/Theme";
 
 const About = styled.div`
     img {
-        width: auto;
-        height: 520px;
+        max-width: 30%;
+        max-height: 500px;
+        object-fit: cover;
+
         margin-right: 20px;
         border-radius: 20px;
+
+        @media ${theme.media.tablet} {
+            display: none;
+        }
     }
 `;
 

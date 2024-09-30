@@ -38,7 +38,7 @@ export const AboutMe: React.FC = () => {
     return (
         <S.About>
             <Container>
-                <FlexWrapper>
+                <FlexWrapper justify={"space-between"}>
                     <img src={photo} alt=""/>
                     <FlexWrapper direction="column">
                         <SectionTitle>About Me</SectionTitle>
