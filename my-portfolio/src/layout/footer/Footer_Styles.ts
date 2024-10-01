@@ -3,6 +3,7 @@ import { FlexWrapper } from "../../components/FlexWrapper";
 
 const Footer = styled.footer`
     padding: 40px 0;
+    position: relative;
 
     ${FlexWrapper} {
         position: relative;

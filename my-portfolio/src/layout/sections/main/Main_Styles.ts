@@ -3,7 +3,7 @@ import { theme } from "../../../styles/Theme";
 import photo from "../../../assets/images/Abstract.svg";
 
 const Main = styled.section`
-
+    position: relative;
 `;
 
 const Text = styled.p`

@@ -2,6 +2,8 @@ import styled from "styled-components"
 import { theme } from "../../../styles/Theme";
 
 const About = styled.section`
+    position: relative;
+
     img {
         max-width: 30%;
         max-height: 500px;

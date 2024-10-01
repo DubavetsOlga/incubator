@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Slogan = styled.section`
-    background-color: bisque;
+
 `;
 /*
 const Email = styled.span`
