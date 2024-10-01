@@ -34,19 +34,19 @@ export const GlobalStyle = createGlobalStyle`
         list-style: none;
         padding: 0;
     }
-/*
+
     button {
-        background-color: unset;
+        background-color: #42446E;
         border: none;
         cursor: pointer;
         color: ${theme.colors.font};
-    }*/
+    }
 
     section {
-        padding: 150px 0;
+        padding: 120px 0;
 
         @media ${theme.media.mobile} {
-            padding: 80px 0;
+            margin: 80px 0;
         }
     }
 

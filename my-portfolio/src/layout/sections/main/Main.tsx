@@ -15,7 +15,9 @@ export const Main: React.FC = () => {
                         <S.Name>Volha Dubavets</S.Name><br/>
                         I build things for web
                     </S.Text>
-                    <S.Photo src={photo} alt="" />
+                    <S.ImgContainer>
+                        <S.Photo src={photo} alt="" />
+                    </S.ImgContainer>
                 </FlexWrapper>
             </Container>
         </S.Main>

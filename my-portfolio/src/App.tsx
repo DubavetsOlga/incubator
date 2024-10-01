@@ -6,6 +6,7 @@ import { Works } from './layout/sections/works/Works';
 import { Contacts } from './layout/sections/contacts/Contacts';
 import { Footer } from './layout/footer/Footer';
 import { AboutMe } from './layout/sections/about/AboutMe';
+import { Slogan } from './layout/sections/slogan/Slogan';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
             <AboutMe/>
             <Skills/>
             <Works/>
+            <Slogan/>
             <Contacts/>
             <Footer/>
         </div>

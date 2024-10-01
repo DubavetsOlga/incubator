@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import { theme } from "../../../styles/Theme";
+import photo from "../../../assets/images/Abstract.svg";
 
 const Main = styled.section`
 
@@ -41,9 +42,24 @@ const Photo = styled.img`
     }
 `;
 
+const ImgContainer = styled.div`
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        content: url(${photo});
+        position: absolute;
+        z-index: 0;
+        top: -40%;
+        left: -40%;
+        z-index: 0;
+    }
+`;
+
 export const S = {
     Main,
     Photo,
     Text,
     Name,
+    ImgContainer,
 }

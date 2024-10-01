@@ -13,18 +13,12 @@ const Works = styled.section`
 const Work = styled.div`
     width: 30%;
     flex-grow: 1;
-    min-width: 300px;
+    min-width: 360px;
+    text-align: justify;
 
     border-radius: 20px;
     box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2);
     background: rgb(54, 54, 54);
-
-    a {
-        color: white;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 26px;
-    }
 
     @media ${theme.media.desktop} {
         max-width: 375px;
@@ -59,12 +53,35 @@ const Stack = styled.span`
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
+    margin-bottom: 20px;
+    display: inline-block;
 `;
 
 const Stacks = styled.span`
     font-size: 14px;
     font-weight: 300;
     line-height: 26px;
+`;
+
+const Links = styled.div`
+    display: flex;
+
+    a {
+        color: white;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        display: flex;
+        align-items: center;
+    }
+
+    a + a {
+        margin-left: 60px;
+    }
+
+    a span {
+        margin-left: 10px;
+    }
 `;
 
 export const S = {
@@ -75,5 +92,6 @@ export const S = {
     Text,
     Description,
     Stack,
-    Stacks
+    Stacks,
+    Links,
 }

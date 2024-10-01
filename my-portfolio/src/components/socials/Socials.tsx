@@ -14,6 +14,7 @@ export const Socials: React.FC = () => {
 };
 
 const List = styled.ul`
+    display: flex;
     gap: 20px!important;
 
     a {
