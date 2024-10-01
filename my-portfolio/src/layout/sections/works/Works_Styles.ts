@@ -83,6 +83,15 @@ const Links = styled.div`
 
     a span {
         margin-left: 10px;
+        transition: ${theme.animations.transition};
+
+        &:hover {
+            background: -webkit-linear-gradient(180deg, #E70FAA -2.06%, #13B0F5 100%);
+            background-clip: unset;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transform: scale(1.05);
+        }
     }
 `;
 

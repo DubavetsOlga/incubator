@@ -18,6 +18,19 @@ const List = styled.ul`
     gap: 20px!important;
 
     a {
-        color: ${theme.colors.secondFont}
+        color: ${theme.colors.secondFont};
+
+        &:hover {
+            color: white;
+        }
+    }
+
+    li {
+        transition: ${theme.animations.transition};
+
+        &:hover {
+            transform: scale(1.2);
+            color: white;
+        }
     }
 `;

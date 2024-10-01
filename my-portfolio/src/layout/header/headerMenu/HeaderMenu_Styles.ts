@@ -6,6 +6,11 @@ import { Link } from "react-scroll";
 
 const MenuItem = styled.li`
     position: relative;
+    transition: ${theme.animations.transition};
+
+    &:hover {
+        transform: scale(1.2);
+    }
 `;
 
 const NavLink = styled(Link)`
@@ -14,6 +19,13 @@ const NavLink = styled(Link)`
     font-weight: 500;
     line-height: 26px;
     text-align: center;
+
+    &.active {
+        background: -webkit-linear-gradient(180deg, #E70FAA -2.06%, #13B0F5 100%);
+        background-clip: unset;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 `;
 
 //Desktop Menu

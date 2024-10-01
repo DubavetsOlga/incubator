@@ -44,9 +44,7 @@ export const Menu: React.FC = () => {
                     </S.MenuItem>
                 )
             })}
-            <S.MenuItem>
-                <Socials/>
-            </S.MenuItem>
+            <Socials/>
         </ul>
     )
 };
