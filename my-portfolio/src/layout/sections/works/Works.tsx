@@ -12,6 +12,7 @@ import workImg4 from "./../../../assets/images/works/work4.png";
 import workImg5 from "./../../../assets/images/works/work5.png";
 import workImg6 from "./../../../assets/images/works/work6.png";
 
+
 const workData = [
     {
         title: "Project Tile goes here",
@@ -53,7 +54,7 @@ const workData = [
 
 export const Works: React.FC = () => {
     return (
-        <S.Works>
+        <S.Works id="projects">
             <Container>
                 <FlexWrapper align={"center"} direction="column">
                     <SectionTitle>Projects</SectionTitle>

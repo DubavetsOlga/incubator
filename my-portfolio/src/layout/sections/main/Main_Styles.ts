@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import { theme } from "../../../styles/Theme";
 import photo from "../../../assets/images/Abstract.svg";
+import { font } from "../../../styles/Common";
 
 const Main = styled.section`
     position: relative;
@@ -17,6 +18,8 @@ const Text = styled.p`
         font-size: 36px;
     }
 `;
+
+    /*${font({weight: 700, Fmax: 58, Fmin: 48})};*/
 
 const Name = styled.span`
     background: -webkit-linear-gradient(180deg, #E70FAA -2.06%, #13B0F5 100%);

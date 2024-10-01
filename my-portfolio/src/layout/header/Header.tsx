@@ -1,12 +1,10 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { S } from "./Header_Styles"
 import { FlexWrapper } from "../../components/FlexWrapper";
 import { Container } from "../../components/Container";
 import { Logo } from "../../components/logo/Logo";
-import { MobileMenu } from "./headerMenu/mobileMenu/Mobile";
+import { MobileMenu } from "./headerMenu/mobileMenu/MobileMenu";
 import { DesktopMenu } from "./headerMenu/desktopMenu/DesktopMenu";
-
-const items = ["Home", "About", "Tech Stack", "Projects", "Contact"];
 
 
 export const Header: React.FC = () => {
@@ -19,15 +17,23 @@ export const Header: React.FC = () => {
         return () => window.removeEventListener("resize", handleWindowResize);
     }, []);
 
+    const [showShadow, setShowShadow] = useState(false);
+
+    useEffect(() => {
+        window.addEventListener("scroll", () => {
+            setShowShadow(window.scrollY > 1);
+        })
+    }, []);
+
     return (
-        <S.Header>
+        <S.Header $showShadow={showShadow}>
             <Container>
                 <FlexWrapper justify="space-between" align="center">
                     <Logo/>
                     {
                         width < breakpoint
-                        ? <MobileMenu menuItems={items}/>
-                        : <DesktopMenu menuItems={items}/>
+                        ? <MobileMenu/>
+                        : <DesktopMenu/>
                     }
                 </FlexWrapper>
             </Container>

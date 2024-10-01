@@ -44,6 +44,7 @@ export const GlobalStyle = createGlobalStyle`
 
     section {
         padding: 120px 0;
+        background-color: #191919;
 
         @media ${theme.media.mobile} {
             margin: 80px 0;

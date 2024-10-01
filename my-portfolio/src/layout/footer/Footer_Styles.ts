@@ -1,9 +1,11 @@
 import styled from "styled-components";
 import { FlexWrapper } from "../../components/FlexWrapper";
+import { theme } from "../../styles/Theme";
 
 const Footer = styled.footer`
     padding: 40px 0;
     position: relative;
+    background-color: ${theme.colors.primaryBg};
 
     ${FlexWrapper} {
         position: relative;

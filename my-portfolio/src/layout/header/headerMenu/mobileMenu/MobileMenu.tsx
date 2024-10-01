@@ -1,8 +1,8 @@
 import React from "react";
 import { Menu } from "../menu/Menu";
-import { S } from "./../HeaderMenu_Styles"
+import { S } from "../HeaderMenu_Styles"
 
-export const MobileMenu: React.FC< { menuItems: Array<string> }> = (props: { menuItems: Array<string> }) => {
+export const MobileMenu: React.FC = () => {
     return (
         <S.MobileMenu>
             <S.BurgerButton isOpen={false}>
@@ -10,7 +10,7 @@ export const MobileMenu: React.FC< { menuItems: Array<string> }> = (props: { men
             </S.BurgerButton>
 
             <S.MobileMenuPopup isOpen={false}>
-                <Menu menuItems={props.menuItems}/>
+                <Menu/>
             </S.MobileMenuPopup>
         </S.MobileMenu>
     );

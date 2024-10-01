@@ -2,15 +2,45 @@ import React from "react";
 import { S } from "./../HeaderMenu_Styles"
 import { Socials } from "../../../../components/socials/Socials";
 
-export const Menu: React.FC< { menuItems: Array<string> }> = (props: { menuItems: Array<string> }) => {
+
+export const Menu: React.FC = () => {
+
+    const items = [
+        {
+            title: "Home",
+            href: "home"
+        },
+        {
+            title: "About",
+            href: "about",
+        },
+        {
+            title: "Skills",
+            href: "skills"
+        },
+        {
+            title: "Projects",
+            href: "projects"
+        },
+        {
+            title: "Contact",
+            href: "contact"
+        }
+    ];
+
     return (
         <ul>
-            {props.menuItems.map((item, index) => {
+            {items.map((item, index) => {
                 return (
                     <S.MenuItem key={index}>
-                        <S.Link href="">
-                            {item}
-                        </S.Link>
+                        <S.NavLink
+                            activeClass="active"
+                            to={item.href}
+                            spy={true}
+                            smooth={true}
+                        >
+                            {item.title}
+                        </S.NavLink>
                     </S.MenuItem>
                 )
             })}

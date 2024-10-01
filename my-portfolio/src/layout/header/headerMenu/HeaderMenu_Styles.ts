@@ -1,18 +1,19 @@
 import styled, { css } from "styled-components"
 import { theme } from "../../../styles/Theme";
+import { Link } from "react-scroll";
 
 //Menu
 
-const Link = styled.a`
+const MenuItem = styled.li`
+    position: relative;
+`;
+
+const NavLink = styled(Link)`
     font-family: "DM Sans", sans-serif;
     font-size: 20px;
     font-weight: 500;
     line-height: 26px;
     text-align: center;
-`;
-
-const MenuItem = styled.li`
-
 `;
 
 //Desktop Menu
@@ -112,10 +113,10 @@ const MobileMenuPopup = styled.div<{isOpen: boolean}>`
 
 
 export const S = {
-    Link,
     MenuItem,
     DesktopMenu,
     MobileMenu,
     BurgerButton,
     MobileMenuPopup,
+    NavLink,
 }
