@@ -8,6 +8,7 @@ export const GlobalStyle = createGlobalStyle`
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        outline: 1px solid red;
     }
 
     body {
@@ -21,7 +22,6 @@ export const GlobalStyle = createGlobalStyle`
         line-height: 1.2;
         min-width: 360px;
         background-color: #191919;
-        ;
     }
 
     a {
@@ -47,7 +47,7 @@ export const GlobalStyle = createGlobalStyle`
         background-color: #191919;
 
         @media ${theme.media.mobile} {
-            margin: 80px 0;
+            padding: 60px 0;
         }
     }
 

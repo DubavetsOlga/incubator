@@ -2,20 +2,30 @@ import styled from "styled-components"
 import { theme } from "../../../styles/Theme";
 import photo from "../../../assets/images/Abstract.svg";
 import { font } from "../../../styles/Common";
+import { FlexWrapper } from "../../../components/FlexWrapper";
 
 const Main = styled.section`
     position: relative;
+
+    ${FlexWrapper} {
+        min-height: 750px;
+
+        @media ${theme.media.mobile} {
+            min-height: 300px;
+        }
+    }
 `;
 
 const Text = styled.p`
     font-size: 58px;
     font-weight: 700;
     letter-spacing: -1px;
+    flex-grow: 1;
 
     max-width: 636px;
 
     @media ${theme.media.mobile} {
-        font-size: 36px;
+        font-size: 30px;
     }
 `;
 
@@ -43,6 +53,10 @@ const Photo = styled.img`
         width: 300px;
         height: 300px;
     }
+
+    @media ${theme.media.mobile} {
+        display: none;
+    }
 `;
 
 const ImgContainer = styled.div`
@@ -56,6 +70,10 @@ const ImgContainer = styled.div`
         top: -40%;
         left: -40%;
         z-index: 0;
+
+        @media ${theme.media.mobile} {
+            display: none;
+        }
     }
 `;
 

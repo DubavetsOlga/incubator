@@ -2,7 +2,7 @@ import styled from "styled-components"
 import { theme } from "../../styles/Theme";
 
 const Header = styled.header<{ $showShadow?: boolean }>`
-    padding: 20px 0;
+    padding: 15px 0;
     position: fixed;
     top: 0;
     left: 0;

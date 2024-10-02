@@ -12,6 +12,11 @@ const About = styled.section`
         margin-right: 20px;
         border-radius: 20px;
 
+        border-image-source: linear-gradient(180deg, #E70FAA 0%, #00C0FD 100%);
+        border: 2px solid #0000;
+        background:linear-gradient(180deg, #E70FAA 0%, #00C0FD 100%) border-box;
+        background-clip: border-area;
+
         @media ${theme.media.tablet} {
             display: none;
         }

@@ -15,8 +15,10 @@ export const Button = styled.button`
 
     transition: ${theme.animations.transition};
 
-    &:hover {
-        transform: translateY(-0.3rem);
-        box-shadow: rgba(255, 255, 255, 0.2) 0 4px 10px;
+    @media ${theme.media.desktop} {
+        &:hover {
+            transform: translateY(-0.3rem);
+            box-shadow: rgba(255, 255, 255, 0.2) 0 4px 10px;
+        }
     }
 `;

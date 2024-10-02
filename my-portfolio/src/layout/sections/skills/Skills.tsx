@@ -25,7 +25,7 @@ export const Skills: React.FC = () => {
     return (
         <S.Skills id="skills">
             <Container>
-                <FlexWrapper align={"center"} direction="column">
+                <FlexWrapper align="center" direction="column">
                     <SectionTitle>My Tech Stack</SectionTitle>
                     <SectionInfo>Technologies I’ve been working with recently</SectionInfo>
                     <FlexWrapper align="center" wrap="wrap" justify="space-around" style={{gap:"60px"}}>

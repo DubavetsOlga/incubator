@@ -46,10 +46,10 @@ const MobileMenu = styled.nav`
 
 const BurgerButton = styled.button<{isOpen: boolean}>`
     position: fixed;
-    width: 200px;
-    height: 200px;
-    top: -60px;
-    right: -100px;
+    width: 100px;
+    height: 90px;
+    top: 0;
+    right: 0px;
     z-index: 999999;
     background-color: transparent;
     border: none;

@@ -15,7 +15,7 @@ const Works = styled.section`
 const Work = styled.div`
     width: 30%;
     flex-grow: 1;
-    min-width: 360px;
+    min-width: min(360px, calc(100vw - 30px));
     text-align: justify;
 
     border-radius: 20px;
@@ -34,17 +34,25 @@ const Image = styled.img`
     border-radius: 20px 20px 0px 0px;
 `;
 
-const Title = styled.h3`
+const Title = styled.h4`
     font-size: 28px;
     font-weight: 500;
-    line-height: 26px;
+    line-height: 0.9;
+
+    @media ${theme.media.mobile} {
+        font-size: 24px;
+    } 
 `;
 
 const Text = styled.p`
     margin: 14px 0 10px;
     font-size: 18px;
     font-weight: 300;
-    line-height: 26px;
+    line-height: 1.4;
+
+    @media ${theme.media.mobile} {
+        font-size: 16px;
+    } 
 `;
 
 const Description = styled.div`
@@ -54,15 +62,23 @@ const Description = styled.div`
 const Stack = styled.span`
     font-size: 16px;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 1.6;
     margin-bottom: 20px;
     display: inline-block;
+
+    @media ${theme.media.mobile} {
+        font-size: 14px;
+    }
 `;
 
 const Stacks = styled.span`
     font-size: 14px;
     font-weight: 300;
-    line-height: 26px;
+    line-height: 1.8;
+
+    @media ${theme.media.mobile} {
+        font-size: 13px;
+    }
 `;
 
 const Links = styled.div`
@@ -72,9 +88,13 @@ const Links = styled.div`
         color: white;
         font-size: 16px;
         font-weight: 400;
-        line-height: 26px;
+        line-height: 1.6;
         display: flex;
         align-items: center;
+
+        @media ${theme.media.mobile} {
+            font-size: 14px;
+        } 
     }
 
     a + a {

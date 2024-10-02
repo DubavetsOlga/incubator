@@ -17,37 +17,37 @@ const workData = [
     {
         title: "Project Tile goes here",
         scr: workImg,
-        techStack: "HTML , JavaScript, SASS, React",
+        techStack: "HTML, JavaScript, SASS, React",
         text: "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"
     },
     {
         title: "Project Tile goes here",
         scr: workImg2,
-        techStack: "HTML , JavaScript, SASS, React",
+        techStack: "HTML, JavaScript, SASS, React",
         text: "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"
     },
     {
         title: "Project Tile goes here",
         scr: workImg3,
-        techStack: "HTML , JavaScript, SASS, React",
+        techStack: "HTML, JavaScript, SASS, React",
         text: "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"
     },
     {
         title: "Project Tile goes here",
         scr: workImg4,
-        techStack: "HTML , JavaScript, SASS, React",
+        techStack: "HTML, JavaScript, SASS, React",
         text: "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"
     },
     {
         title: "Project Tile goes here",
         scr: workImg5,
-        techStack: "HTML , JavaScript, SASS, React",
+        techStack: "HTML, JavaScript, SASS, React",
         text: "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"
     },
     {
         title: "Project Tile goes here",
         scr: workImg6,
-        techStack: "HTML , JavaScript, SASS, React",
+        techStack: "HTML, JavaScript, SASS, React",
         text: "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"
     },
 ];

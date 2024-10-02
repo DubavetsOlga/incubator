@@ -35,8 +35,13 @@ const StyledTabMenu = styled.nav`
         justify-content: center;
         /* max-width: 352px;*/
         width: 100%;
-        margin: 0 auto 40px;
+        margin: 0 auto 30px;
         gap: 20px;
+
+        @media ${theme.media.mobile} {
+            justify-content: space-between;
+            gap: 0;
+        }
     }
 `;
 
@@ -53,5 +58,13 @@ const Link = styled.a`
 
     &:hover {
         transform: scale(1.1);
+    }
+
+    @media ${theme.media.mobile} {
+        font-size: 16px;
+
+        &:hover {
+            transform: none;
+        }
     }
 `;

@@ -1,7 +1,18 @@
 import styled from "styled-components";
+import { SectionTitle } from "../../../components/SectionTitle";
+import { theme } from "../../../styles/Theme";
 
 const Slogan = styled.section`
+    ${SectionTitle} {
+        background: -webkit-linear-gradient(180deg, #E70FAA -2.06%, #13B0F5 100%);
+        background-clip: unset;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
 
+        @media ${theme.media.mobile} {
+            font-size: 44px;
+        }
+    }
 `;
 /*
 const Email = styled.span`

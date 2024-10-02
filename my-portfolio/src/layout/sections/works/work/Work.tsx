@@ -16,7 +16,7 @@ export const Work: React.FC<WorkPropsType> = (props: WorkPropsType) => {
             <S.Description>
                 <S.Title>{props.title}</S.Title>
                 <S.Text>{props.text}</S.Text>
-                <S.Stack>Tech stack : <S.Stacks>{props.techStack}</S.Stacks></S.Stack>
+                <S.Stack>Tech stack: <S.Stacks>{props.techStack}</S.Stacks></S.Stack>
                 <S.Links>
                     <a href={"#"}>
                         <Icon width="20" height="20" viewBox="0 0 20 20" iconId="link"/><span>Live Preview</span>
