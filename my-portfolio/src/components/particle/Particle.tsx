@@ -20,61 +20,107 @@ export const Particle = () => {
             loaded={particlesLoaded}
             options={{
                 fpsLimit: 120,
-                interactivity: {
-                    events: {
-                        onHover: {
+                particles: {
+                    number: {
+                        value: 40,
+                        density: {
                             enable: true,
-                            mode: "repulse",
+                            value_area: 1200
+                        }
+                    },
+                    color: {
+                        value: "#cccccc"
+                    },
+                    shape: {
+                        type: "star",
+                        stroke: {
+                            width: 3,
+                            color: "#cccccc"
                         },
-                        resize: true,
+                        polygon: {
+                            nb_sides: 5
+                        },
+                    },
+                    opacity: {
+                        value: 0.2,
+                        random: true,
+                        anim: {
+                            enable: false,
+                            speed: 1,
+                            opacity_min: 0.1,
+                            sync: false
+                        }
+                    },
+                    size: {
+                        value: 1,
+                        random: true,
+                        anim: {
+                            enable: false,
+                            speed: 20,
+                            size_min: 0.1,
+                            sync: false
+                        }
+                    },
+                    line_linked: {
+                        enable: true,
+                        distance: 192,
+                        color: "#a7a7a7",
+                        opacity: 0.1,
+                        width: 2
+                    },
+                    move: {
+                        enable: true,
+                        speed: 5,
+                        direction: "none",
+                        random: false,
+                        straight: false,
+                        out_mode: "out",
+                        bounce: false,
+                        attract: {
+                            enable: true,
+                            rotateX: 600,
+                            rotateY: 1200
+                        }
+                    }
+                },
+                interactivity: {
+                    detect_on: "canvas",
+                    events: {
+                        onhover: {
+                            enable: true,
+                            mode: "bubble"
+                        },
+                        onclick: {
+                            enable: true,
+                            mode: "repulse"
+                        },
+                        resize: true
                     },
                     modes: {
-                        push: {
-                            quantity: 4,
+                        grab: {
+                            distance: 400,
+                            line_linked: {
+                            opacity: 1
+                            }
+                        },
+                        bubble: {
+                            distance: 400,
+                            size: 6,
+                            duration: 2,
+                            opacity: 1,
+                            speed: 3
                         },
                         repulse: {
                             distance: 200,
-                            duration: 0.4,
+                            duration: 0.4
                         },
-                    },
-                },
-                particles: {
-                    color: {
-                        value: "#ffffff",
-                    },
-                    links: {
-                        color: "#ffffff",
-                        distance: 200,
-                        enable: true,
-                        opacity: 0.5,
-                        width: 1,
-                    },
-                    move: {
-                        direction: "none",
-                        enable: true,
-                        outModes: {
-                            default: "bounce",
+                        push: {
+                            particles_nb: 4
                         },
-                        random: false,
-                        speed: 2,
-                        straight: false,
-                    },
-                    number: {
-                        density: {
-                            enable: true,
-                            area: 1000,
-                        },
-                        value: 50,
-                    },
-                    opacity: {
-                        value: 0.5,
-                    },
-                    shape: {
-                        type: "circle",
-                    },
-                    size: {
-                        value: { min: 0.2, max: 1 },
-                    },
+                        remove: {
+                            particles_nb: 2
+                        }
+                    }
                 },
                 detectRetina: true,
             }}
