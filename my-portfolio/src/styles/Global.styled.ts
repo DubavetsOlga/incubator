@@ -21,7 +21,7 @@ export const GlobalStyle = createGlobalStyle`
         color: ${theme.colors.font};
         line-height: 1.2;
         min-width: 360px;
-        background-color: #191919;
+        background-color: ${theme.colors.primaryBg};
     }
 
     a {

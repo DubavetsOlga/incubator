@@ -8,7 +8,7 @@ export const Footer: React.FC = () => {
     return (
         <S.Footer>
             <Container>
-                <FlexWrapper justify="center" direction="column" align="center" style={{gap: "20px"}}>
+                <FlexWrapper justify="center" direction="column" align="center">
                     <Socials/>
                     <S.Text>
                         Designed and built by <S.ColorText>Volha Dubavets</S.ColorText> with <S.ColorText>Love</S.ColorText> & <S.ColorText>Coffee</S.ColorText>

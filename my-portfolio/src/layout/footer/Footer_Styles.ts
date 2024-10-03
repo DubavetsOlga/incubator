@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { FlexWrapper } from "../../components/FlexWrapper";
 import { theme } from "../../styles/Theme";
+import { Socials } from "../../components/socials/Socials";
 
 const Footer = styled.footer`
     padding: 40px 0;
@@ -9,6 +10,7 @@ const Footer = styled.footer`
 
     ${FlexWrapper} {
         position: relative;
+        gap: 20px;
 
         &::before {
             content: "";
@@ -24,12 +26,12 @@ const Footer = styled.footer`
 const Text = styled.span`
     font-size: 18px;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 1.4;
     text-align: center;
 `;
 
 const ColorText = styled.span`
-    background: -webkit-linear-gradient(180deg, #E70FAA -2.06%, #13B0F5 100%);
+    background: ${theme.colors.gradient};
     background-clip: unset;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
