@@ -1,10 +1,11 @@
 import styled from "styled-components";
 import { SectionTitle } from "../../../components/SectionTitle";
 import { theme } from "../../../styles/Theme";
+import { Button } from "../../../components/Button";
 
 const Slogan = styled.section`
     ${SectionTitle} {
-        background: -webkit-linear-gradient(180deg, #E70FAA -2.06%, #13B0F5 100%);
+        background: ${theme.colors.gradient};
         background-clip: unset;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -13,23 +14,13 @@ const Slogan = styled.section`
             font-size: 44px;
         }
     }
-`;
-/*
-const Email = styled.span`
-    background: -webkit-linear-gradient(180deg, #E70FAA -2.06%, #13B0F5 100%);
-    background-clip: unset;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 
-    font-family: "DM Sans", sans-serif;
-    font-size: 58px;
-    font-weight: 700;
-    letter-spacing: -1px;
-    text-align: center;
-
-    display: block;
+    ${Button} {
+        display: block;
+        margin: 0 auto;
+    }
 `;
-*/
+
 export const S = {
     Slogan,
 }
