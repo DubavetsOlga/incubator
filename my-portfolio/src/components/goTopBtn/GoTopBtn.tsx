@@ -30,9 +30,14 @@ export const GoTopBtn: React.FC = () => {
 };
 
 const StyledGoTopBtn = styled.button`
-    background-color: rgba(0, 0, 0, 0.3);
-    padding: 8;
+    background-color: #A7A7A7;
+    opacity: 0.5;
+    padding: 6px;
     position: fixed;
     right: 30px;
     bottom: 30px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    color: black;
 `;
