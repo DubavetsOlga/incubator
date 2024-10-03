@@ -1,10 +1,11 @@
 import React  from "react";
-import { S } from "./Main_Styles"
-import { Container } from "../../../components/Container";
-import photo from "../../../assets/images/myphoto4.png";
-import { FlexWrapper } from "../../../components/FlexWrapper";
 import Typewriter from 'typewriter-effect';
 import Tilt from 'react-parallax-tilt';
+import photo from "../../../assets/images/myphoto.jpg";
+import { Container } from "../../../components/Container";
+import { FlexWrapper } from "../../../components/FlexWrapper";
+import { S } from "./Main_Styles"
+
 
 export const Main: React.FC = () => {
     return (
@@ -13,16 +14,15 @@ export const Main: React.FC = () => {
                 <FlexWrapper align={"center"} justify={"space-between"} wrap={"wrap"}>
                     <S.Text>
                         Hi 👋, <br/>
-                        My name is<br/>
-                        <S.Name>Volha Dubavets</S.Name><br/>
+                        I'm <S.Name>Volha Dubavets</S.Name>
                         <Typewriter
-                                options={{
-                                    strings: ["I build things for web."],
-                                    autoStart: true,
-                                    loop: true,
-                                    delay: 150
-                                }}
-                            />
+                            options={{
+                                strings: ["Web Developer"],
+                                autoStart: true,
+                                loop: true,
+                                delay: 150
+                            }}
+                        />
                     </S.Text>
                     <S.ImgContainer>
                         <Tilt>
