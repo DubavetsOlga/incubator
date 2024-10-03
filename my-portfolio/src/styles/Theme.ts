@@ -1,8 +1,7 @@
 export const theme = {
     colors: {
         primaryBg: "#191919",
-        secondaryBg: "#252527",
-        accent: "#7572D5",
+        accent: "#42446E",
         gradient: "-webkit-linear-gradient(180deg, #E70FAA -2.06%, #13B0F5 100%)",
 
         font: "#CCCCCC",

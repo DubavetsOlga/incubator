@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { FlexWrapper } from "../../components/FlexWrapper";
 import { theme } from "../../styles/Theme";
-import { Socials } from "../../components/socials/Socials";
 
 const Footer = styled.footer`
     padding: 40px 0;
@@ -15,7 +14,7 @@ const Footer = styled.footer`
         &::before {
             content: "";
             position: absolute;
-            border-top: 2px solid #42446E;
+            border-top: 2px solid ${theme.colors.accent};
             top: -40px;
             left: 0;
             width: 100%;

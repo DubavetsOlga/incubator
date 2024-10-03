@@ -37,7 +37,7 @@ const Form = styled.form`
 
 const Field = styled.input`
     width: 100%;
-    background-color: ${theme.colors.secondaryBg};
+    background-color: #252527;
     border: 1px solid ${theme.colors.borderColor};
     padding: 7px 15px;
 

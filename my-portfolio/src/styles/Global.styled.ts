@@ -36,7 +36,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     button {
-        background-color: #42446E;
+        background-color: unset;
         border: none;
         cursor: pointer;
         color: ${theme.colors.font};
@@ -44,7 +44,7 @@ export const GlobalStyle = createGlobalStyle`
 
     section {
         padding: 120px 0;
-        background-color: #191919;
+        background-color:${theme.colors.primaryBg};
 
         @media ${theme.media.mobile} {
             padding: 60px 0;
@@ -56,10 +56,4 @@ export const GlobalStyle = createGlobalStyle`
         font-weight: 400;
         color: ${theme.colors.secondFont};
     }
-/*
-    p {
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 1.4;
-    }*/
 `;
