@@ -21,7 +21,7 @@ const NavLink = styled(Link)`
     text-align: center;
 
     &.active {
-        background: -webkit-linear-gradient(180deg, #E70FAA -2.06%, #13B0F5 100%);
+        background: ${theme.colors.gradient};
         background-clip: unset;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -41,7 +41,7 @@ const DesktopMenu = styled.nav`
 //Mobile Menu
 
 const MobileMenu = styled.nav`
-
+    min-width: 50px;
 `;
 
 const BurgerButton = styled.button<{isOpen: boolean}>`

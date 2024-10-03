@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { S } from "./Header_Styles"
 import { FlexWrapper } from "../../components/FlexWrapper";
 import { Container } from "../../components/Container";
 import { Logo } from "../../components/logo/Logo";
 import { MobileMenu } from "./headerMenu/mobileMenu/MobileMenu";
 import { DesktopMenu } from "./headerMenu/desktopMenu/DesktopMenu";
+import { S } from "./Header_Styles"
+import { Socials } from "../../components/socials/Socials";
 
 
 export const Header: React.FC = () => {
@@ -32,8 +33,8 @@ export const Header: React.FC = () => {
                     <Logo/>
                     {
                         width < breakpoint
-                        ? <MobileMenu/>
-                        : <DesktopMenu/>
+                        ? <><Socials/><MobileMenu/></>
+                        : <><DesktopMenu/><Socials/></>
                     }
                 </FlexWrapper>
             </Container>
