@@ -1,8 +1,8 @@
 import React from "react";
 import { Container } from "../../../components/Container";
 import { SectionTitle } from "../../../components/SectionTitle";
-import { S } from "./Contacts_Styles";
 import { Button } from "../../../components/Button";
+import { S } from "./Contacts_Styles";
 
 export const Contacts: React.FC = () => {
     return (

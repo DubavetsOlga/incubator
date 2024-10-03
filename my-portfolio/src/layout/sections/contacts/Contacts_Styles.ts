@@ -5,21 +5,6 @@ const Contact = styled.section`
     position: relative;
 `;
 
-const Email = styled.span`
-    background: -webkit-linear-gradient(180deg, #E70FAA -2.06%, #13B0F5 100%);
-    background-clip: unset;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    font-family: "DM Sans", sans-serif;
-    font-size: 58px;
-    font-weight: 700;
-    letter-spacing: -1px;
-    text-align: center;
-
-    display: block;
-`;
-
 const Form = styled.form`
     max-width: 540px;
     width: 100%;
@@ -31,21 +16,24 @@ const Form = styled.form`
 
     textarea {
         resize: none;
-        height: 155px;
+        height: 156px;
     }
 `;
 
 const Field = styled.input`
     width: 100%;
-    background-color: #252527;
-    border: 1px solid ${theme.colors.borderColor};
-    padding: 7px 15px;
 
-    font-family: "Poppins", sans-serif;
     font-size: 12px;
     font-weight: 400;
     letter-spacing: 0.05em;
     color: ${theme.colors.font};
+
+    padding: 0.5rem;
+    border: double 1px transparent;
+    border-radius: 6px;
+    background-image: linear-gradient(#252527, #252527), ${theme.colors.gradient};
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
 
     &::placeholder {
         color: ${theme.colors.placeholderColor};
@@ -53,7 +41,7 @@ const Field = styled.input`
     }
 
     &:focus-visible {
-        outline: 1px solid ${theme.colors.borderColor};
+        outline: 2px solid ${theme.colors.borderColor};
     }
 `;
 
@@ -61,5 +49,4 @@ export const S = {
     Contact,
     Form,
     Field,
-    Email,
 }

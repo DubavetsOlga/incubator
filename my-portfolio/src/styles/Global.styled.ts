@@ -24,6 +24,10 @@ export const GlobalStyle = createGlobalStyle`
         background-color: ${theme.colors.primaryBg};
     }
 
+    input, button, textarea {
+        font-family: 'Poppins', sans-serif;
+    }
+
     a {
         text-decoration: none;
         cursor: pointer;
@@ -39,7 +43,6 @@ export const GlobalStyle = createGlobalStyle`
         background-color: unset;
         border: none;
         cursor: pointer;
-        color: ${theme.colors.font};
     }
 
     section {
