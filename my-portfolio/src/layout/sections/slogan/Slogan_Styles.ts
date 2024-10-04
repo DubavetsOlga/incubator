@@ -5,7 +5,7 @@ import { Button } from "../../../components/Button";
 
 const Slogan = styled.section`
     ${SectionTitle} {
-        background: ${theme.colors.gradient};
+        background: -webkit-linear-gradient(${theme.colors.gradient});
         background-clip: unset;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;

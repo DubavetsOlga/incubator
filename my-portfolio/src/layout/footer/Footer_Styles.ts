@@ -5,7 +5,7 @@ import { theme } from "../../styles/Theme";
 const Footer = styled.footer`
     padding: 40px 0;
     position: relative;
-    background-color: ${theme.colors.primaryBg};
+    background-color: ${(props) => props.theme.colors.primaryBg};
 
     ${FlexWrapper} {
         position: relative;
@@ -30,7 +30,7 @@ const Text = styled.span`
 `;
 
 const ColorText = styled.span`
-    background: ${theme.colors.gradient};
+    background: -webkit-linear-gradient(${theme.colors.gradient});
     background-clip: unset;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

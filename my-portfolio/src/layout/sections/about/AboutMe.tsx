@@ -38,6 +38,24 @@ export const AboutMe: React.FC = () => {
     return (
         <S.About id="about">
             <Container>
+                    <FlexWrapper direction="column">
+                        <SectionTitle>About Me</SectionTitle>
+                        <S.Description>
+                            I’d describe myself as a goal-oriented and hardworking person with experience in creating SPA, usingReact(JS/TS), Redux, HTML & CSS. Now I am improving my skills in this direction and expanding them with new technologies.
+                        </S.Description>
+                        <TabMenu
+                            tabItems={tabItems}
+                            changeFilterStatus={changeFilterStatus}
+                            currentFilterStatus={currentFilterStatus}
+                        />
+                        <TabPanel panel={currentFilterStatus}/>
+                    </FlexWrapper>
+            </Container>
+        </S.About>
+    );
+};
+
+/*
                 <FlexWrapper justify={"space-between"}>
                     <img src={photo} alt=""/>
                     <FlexWrapper direction="column">
@@ -53,7 +71,4 @@ export const AboutMe: React.FC = () => {
                         <TabPanel panel={currentFilterStatus}/>
                     </FlexWrapper>
                 </FlexWrapper>
-            </Container>
-        </S.About>
-    );
-};
+                */

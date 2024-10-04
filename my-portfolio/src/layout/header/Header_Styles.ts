@@ -9,11 +9,15 @@ const Header = styled.header<{ $showShadow?: boolean }>`
     left: 0;
     right: 0;
     z-index: 99999;
-    background-color: ${theme.colors.primaryBg};
+    background-color: ${(props) => props.theme.colors.primaryBg};
     box-shadow: ${props => props.$showShadow ? `0px 2px ${theme.colors.accent}` : "none"};
 
     ${FlexWrapper} {
         gap: 30px;
+
+        @media ${theme.media.mobile} {
+            gap: 15px;
+        }
     }
 `;
 

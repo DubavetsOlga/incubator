@@ -50,7 +50,7 @@ const Link = styled.a`
     transition: ${theme.animations.transition};
 
     &.active {
-        background: -webkit-linear-gradient(180deg, #E70FAA -2.06%, #13B0F5 100%);
+        background: -webkit-linear-gradient(${theme.colors.gradient});
         background-clip: unset;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;

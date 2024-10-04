@@ -30,7 +30,7 @@ export const GoTopBtn: React.FC = () => {
 };
 
 const StyledGoTopBtn = styled.button`
-    background-color: #A7A7A7;
+    background-color: ${(props) => props.theme.colors.secondFont};
     opacity: 0.5;
     padding: 6px;
     position: fixed;

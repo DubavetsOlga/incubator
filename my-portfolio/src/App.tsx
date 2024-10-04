@@ -10,22 +10,43 @@ import { Slogan } from './layout/sections/slogan/Slogan';
 import { GoTopBtn } from './components/goTopBtn/GoTopBtn';
 import { Particle } from './components/particle/Particle';
 
+import React, { useContext } from 'react';
+import styled, { ThemeProvider } from 'styled-components';
+import { lightTheme, darkTheme } from './styles/Theme'; 
+import { GlobalStyle } from './styles/Global.styled';
+import { ThemeContext } from './contexts/ThemeContext';
+
 
 function App() {
+    const { theme } = useContext(ThemeContext);
+
     return (
-        <div className="App">
+        <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
+            <GlobalStyle />
             <Particle/>
-            <Header/>
-            <Main/>
-            <AboutMe/>
-            <Skills/>
-            <Works/>
-            <Slogan/>
-            <Contacts/>
-            <Footer/>
-            <GoTopBtn/>
-        </div>
+            <StyledApp>
+                <Header/>
+                <Main/>
+                <AboutMe/>
+                <Skills/>
+                <Works/>
+                <Slogan/>
+                <Contacts/>
+                <Footer/>
+                <GoTopBtn/>
+            </StyledApp>
+        </ThemeProvider>
     );
 }
+
+const StyledApp = styled.div`
+    position: relative;
+    color: ${(props) => props.theme.colors.font};
+    background-color: ${(props) => props.theme.colors.primaryBg};
+
+    h3 {
+        color: ${(props) => props.theme.colors.secondFont};
+    }
+`;
 
 export default App;

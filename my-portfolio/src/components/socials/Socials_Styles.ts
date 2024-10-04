@@ -16,16 +16,11 @@ const ListItem = styled.li`
 
     &:hover {
         transform: scale(1.2);
-        color: white;
     }
 `;
 
 const Link = styled.a`
-    color: ${theme.colors.secondFont};
-
-    &:hover {
-        color: white;
-    }
+    color: ${(props) => props.theme.colors.secondFont};
 `;
 
 export const S = {

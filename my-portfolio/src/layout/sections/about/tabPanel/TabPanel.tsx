@@ -1,7 +1,6 @@
 import React from "react";
 import { TabsStatusType } from "./../tabMenu/TabMenu";
 import styled from "styled-components";
-import { theme } from "../../../../styles/Theme";
 
 
 export const TabPanel: React.FC<{panel: TabsStatusType}> = (props: {panel: TabsStatusType}) => {
@@ -59,7 +58,7 @@ export const TabPanel: React.FC<{panel: TabsStatusType}> = (props: {panel: TabsS
 
 const Tab = styled.div`
     li {
-        color: ${theme.colors.secondFont};
+        color: ${(props) => props.theme.colors.secondFont};
         text-align: justify;
         line-height: 1.4;
         margin-bottom: 10px;

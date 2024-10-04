@@ -18,10 +18,11 @@ const NavLink = styled(Link)`
     font-size: 20px;
     font-weight: 500;
     line-height: 26px;
+    color: ${(props) => props.theme.colors.secondFont};
     text-align: center;
 
     &.active {
-        background: ${theme.colors.gradient};
+        background: -webkit-linear-gradient(${theme.colors.gradient});
         background-clip: unset;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -58,7 +59,7 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
         display: block;
         width: 36px;
         height: 2px;
-        background-color: ${theme.colors.font};
+        background-color: ${(props) => props.theme.colors.font};
         position: absolute;
         left: 40px;
         bottom: 50;
@@ -72,7 +73,7 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
             display: block;
             width: 36px;
             height: 2px;
-            background-color: ${theme.colors.font};
+            background-color: ${(props) => props.theme.colors.font};
             position: absolute;
             transform: translateY(-10px);
 
@@ -86,7 +87,7 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
             display: block;
             width: 24px;
             height: 2px;
-            background-color: ${theme.colors.font};
+            background-color: ${(props) => props.theme.colors.font};
             position: absolute;
             transform: translateY(10px);
 

@@ -26,12 +26,13 @@ const Field = styled.input`
     font-size: 12px;
     font-weight: 400;
     letter-spacing: 0.05em;
-    color: ${theme.colors.font};
+    color: ${(props) => props.theme.colors.font};
 
     padding: 0.5rem;
     border: double 1px transparent;
     border-radius: 6px;
-    background-image: linear-gradient(#252527, #252527), ${theme.colors.gradient};
+    background-image: linear-gradient(${(props) => props.theme.colors.placeholderBg}, ${(props) => props.theme.colors.placeholderBg}),
+                        linear-gradient(${theme.colors.gradient});
     background-origin: border-box;
     background-clip: padding-box, border-box;
 
