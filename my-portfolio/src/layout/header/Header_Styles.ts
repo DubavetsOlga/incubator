@@ -11,6 +11,16 @@ const Header = styled.header<{ $showShadow?: boolean }>`
     z-index: 99999;
     background-color: ${(props) => props.theme.colors.primaryBg};
     box-shadow: ${props => props.$showShadow ? `0px 2px ${theme.colors.accent}` : "none"};
+    transition: .8s ease;
+
+    button {
+        color: ${(props) => props.theme.colors.secondFont};
+        transition: ${theme.animations.transition};
+
+        &:hover {
+            transform: rotate(45deg);
+        }
+    }
 
     ${FlexWrapper} {
         gap: 30px;

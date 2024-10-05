@@ -40,13 +40,12 @@ const About = styled.section`
 
         &::before {
             content: url(${photo});
-                position: absolute;
-                z-index: 0;
-                top: -350px;
-                left: -554px;
-                z-index: -1;
-                transform: scale(-1, 1);
-                max-width: 95vw;
+            position: absolute;
+            top: -350px;
+            left: -554px;
+            z-index: -1;
+            transform: scale(-1, 1);
+            max-width: 95vw;
         }
     }
 `;

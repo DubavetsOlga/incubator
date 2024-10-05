@@ -6,7 +6,7 @@ export const Button = styled.button`
     font-weight: 400;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: white; /*black*/
+    color: white;
 
     height: 40px;
     padding: 0 20px;
@@ -20,6 +20,6 @@ export const Button = styled.button`
 
     &:hover {
         transform: translateY(-0.3rem);
-        box-shadow: /*rgba(255, 255, 255, 0.2)*/ rgba(0, 0, 0, 0.4) 0 4px 10px;
+        box-shadow: ${(props) => props.theme.colors.secondFont} 0 4px 16px;
     }
 `;

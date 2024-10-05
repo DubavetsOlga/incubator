@@ -36,7 +36,10 @@ export const lightTheme = {
         font: "#42446E",
         secondFont: "#666666",
 
-        testColor: "red"
+        boxShadow: "#00000033",
+        boxColor: "white",
+        title: "#000000",
+        link: "#000000",
     },
 };
 
@@ -49,6 +52,9 @@ export const darkTheme = {
         font: "#CCCCCC",
         secondFont: "#A7A7A7",
 
-        testColor: "green"
+        boxShadow: "rgba(54, 54, 54, .2)",
+        boxColor: "rgb(54, 54, 54)",
+        title: "#CCCCCC",
+        link: "white",
     },
 };        

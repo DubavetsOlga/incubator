@@ -19,8 +19,8 @@ const Work = styled.div`
     text-align: justify;
 
     border-radius: 20px;
-    box-shadow: 2px 2px 100px 0px /*rgba(0, 0, 0, 0.2);*/ #00000033;
-    /*background: rgb(54, 54, 54);*/
+    box-shadow: 2px 2px 100px 0px ${(props) => props.theme.colors.boxShadow};
+    background: ${(props) => props.theme.colors.boxColor};
 
     @media ${theme.media.desktop} {
         max-width: 375px;
@@ -38,7 +38,7 @@ const Title = styled.h4`
     font-size: 28px;
     font-weight: 500;
     line-height: 0.9;
-    color: /*${theme.colors.font}*/#000000;
+    color: ${(props) => props.theme.colors.title};
 
     @media ${theme.media.mobile} {
         font-size: 24px;
@@ -88,10 +88,11 @@ const Links = styled.div`
     display: flex;
 
     a {
-        color: /*white;*/ #000000;
         font-size: 16px;
         font-weight: 400;
         line-height: 1.6;
+        color: ${(props) => props.theme.colors.link};
+
         display: flex;
         align-items: center;
 

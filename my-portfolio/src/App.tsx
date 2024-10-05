@@ -44,6 +44,8 @@ const StyledApp = styled.div`
     color: ${(props) => props.theme.colors.font};
     background-color: ${(props) => props.theme.colors.primaryBg};
 
+    transition: .8s ease;
+
     h3 {
         color: ${(props) => props.theme.colors.secondFont};
     }

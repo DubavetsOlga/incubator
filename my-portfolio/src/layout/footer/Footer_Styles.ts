@@ -6,6 +6,7 @@ const Footer = styled.footer`
     padding: 40px 0;
     position: relative;
     background-color: ${(props) => props.theme.colors.primaryBg};
+    transition: .8s ease;
 
     ${FlexWrapper} {
         position: relative;
