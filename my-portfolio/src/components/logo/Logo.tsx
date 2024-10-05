@@ -5,13 +5,18 @@ import { theme } from "../../styles/Theme";
 
 export const Logo: React.FC = () => {
     return (
-        <StyledLogo href="#">
-            <Icon width="60" height="60" viewBox="0 0 122 102" iconId={"logo"}/>
+        <StyledLogo>
+            <a href="#">
+                <Icon width="60" height="60" viewBox="0 0 122 102" iconId={"logo"}/>
+            </a>
         </StyledLogo>
     );
 };
 
-const StyledLogo = styled.a`
+const StyledLogo = styled.div`
     flex-grow: 1;
-    color: ${theme.colors.accent};
+
+    a {
+        color: ${theme.colors.accent};
+    }
 `;

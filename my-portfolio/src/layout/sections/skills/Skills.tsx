@@ -1,4 +1,4 @@
-import React  from "react";
+import React, { useState, useEffect }  from "react";
 import { Container } from "../../../components/Container";
 import { S } from "./Skills_Styles"
 import { SectionTitle } from "../../../components/SectionTitle";
@@ -22,6 +22,15 @@ const skillData = [
 ];
 
 export const Skills: React.FC = () => {
+    const [width, setWidth] = React.useState(window.innerWidth);
+    const breakpoint = 500;
+
+    React.useEffect(() => {
+        const handleWindowResize = () => setWidth(window.innerWidth)
+        window.addEventListener("resize", handleWindowResize);
+        return () => window.removeEventListener("resize", handleWindowResize);
+    }, []);
+
     return (
         <S.Skills id="skills">
             <Container>
@@ -32,7 +41,17 @@ export const Skills: React.FC = () => {
                         <Fade cascade damping={0.2}>
                             {skillData.map((s, index) => {
                                 return <S.Skill key={index}>
-                                    <Icon iconId={s.iconId} width="120" height="120" viewBox="0 0 48 48"/>
+
+                                    {
+                                        width > breakpoint
+                                        ? <>
+                                                <Icon iconId={s.iconId} width="120" height="120" viewBox="0 0 48 48"/>
+                                            </>
+                                        : <>
+                                                <Icon iconId={s.iconId} width="60" height="60" viewBox="0 0 48 48"/>
+                                            </>
+                                    }
+
                                     <S.Title>{s.title}</S.Title>
                                 </S.Skill>
                             })}

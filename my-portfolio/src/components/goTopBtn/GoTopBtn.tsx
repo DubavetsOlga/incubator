@@ -39,5 +39,5 @@ const StyledGoTopBtn = styled.button`
     border-radius: 50%;
     width: 30px;
     height: 30px;
-    color: black;
+    color: ${(props) => props.theme.colors.primaryBg};
 `;

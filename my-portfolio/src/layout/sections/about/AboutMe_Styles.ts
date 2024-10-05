@@ -55,7 +55,7 @@ const Description = styled.p`
     font-weight: 400;
     line-height: 26px;
     margin-bottom: 20px;
-    color: ${theme.colors.secondFont};
+    color: ${(props) => props.theme.colors.secondFont};
     text-align: justify;
 `;
 /*

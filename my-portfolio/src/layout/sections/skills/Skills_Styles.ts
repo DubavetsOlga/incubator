@@ -8,6 +8,7 @@ const Skill = styled.div`
     /*width: 120px;*/
     display: flex;
     flex-direction: column;
+    align-items: center
     /*margin-bottom: 80px;*/
 `;
 
