@@ -1,6 +1,7 @@
 import { ChangeEvent, useState, KeyboardEvent } from 'react';
 import {TaskType} from "./App";
 import {Button} from "./Button";
+import {useAutoAnimate} from "@formkit/auto-animate/react";
 
 type FilterValuesType = 'all' | 'active' | 'completed'
 
@@ -16,7 +17,8 @@ export const Todolist = ({title, tasks, removeTask, addTask, changeTaskStatus}: 
 
 	const [filter, setFilter] = useState('all');
 	const [taskTitle, setTaskTitle] = useState('');
-	const [error, setError] = useState<string | null>(null)
+	const [error, setError] = useState<string | null>(null);
+	const [listRef] = useAutoAnimate<HTMLUListElement>();
 
 	let filteredTasks = tasks;
 	if (filter === 'active') {
@@ -83,7 +85,7 @@ export const Todolist = ({title, tasks, removeTask, addTask, changeTaskStatus}: 
 			{
 				filteredTasks.length === 0
 					? <p>Тасок нет</p>
-					: <ul>
+					: <ul ref={listRef}>
 						{filteredTasks.map((task) => {
 							return (
 							<li key={task.id} className={task.isDone ? 'is-done' : ''}>
