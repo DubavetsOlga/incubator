@@ -20,14 +20,17 @@ export const Todolist = ({title, tasks, removeTask, addTask, changeTaskStatus}: 
 	const [error, setError] = useState<string | null>(null);
 	const [listRef] = useAutoAnimate<HTMLUListElement>();
 
-	let filteredTasks = tasks;
-	if (filter === 'active') {
-		filteredTasks = tasks.filter(task => !task.isDone)
+	const taskFilter = () => {
+		switch (filter) {
+			case 'active':
+				return tasks.filter(task => !task.isDone);
+			case 'completed':
+				return tasks.filter(task => task.isDone)
+			default: return tasks;
+		}
 	}
 
-	if (filter === 'completed') {
-		filteredTasks = tasks.filter(task => task.isDone)
-	}
+	let filteredTasks = taskFilter();
 
 	const changeFilter = (newFilterValue: FilterValuesType) => {
 		setFilter(newFilterValue);
@@ -38,13 +41,14 @@ export const Todolist = ({title, tasks, removeTask, addTask, changeTaskStatus}: 
 	}
 
 	const addTaskHandler = () => {
-		if (taskTitle.trim() !== '') {
-			if (isTaskTitleValid) {
-				addTask(taskTitle.trim());
-				setTaskTitle('');
-			}
-		} else {
+		if (!taskTitle.trim()) {
 			setError('Title is required');
+			setTaskTitle('');
+			return;
+		}
+
+		if (isTaskTitleValid) {
+			addTask(taskTitle.trim());
 			setTaskTitle('');
 		}
 	}
@@ -61,14 +65,13 @@ export const Todolist = ({title, tasks, removeTask, addTask, changeTaskStatus}: 
 	}
 
 	const changeTaskStatusHandler = (taskId: string, e: ChangeEvent<HTMLInputElement>) => {
-		const newStatusValue = e.currentTarget.checked;
-		changeTaskStatus(taskId, newStatusValue)
+		changeTaskStatus(taskId, e.currentTarget.checked)
 	}
 
 	const isTaskTitleValid = taskTitle.length < 16;
 
 	return (
-		<div>
+		<div className="todolist">
 			<h3>{title}</h3>
 			<div>
 				<input
@@ -77,9 +80,10 @@ export const Todolist = ({title, tasks, removeTask, addTask, changeTaskStatus}: 
 					onChange={changeTaskTitleHandler}
 					onKeyUp={addTaskOnKeyUpHandler}
 					placeholder='max length 15'
+					maxLength={15}
 				/>
 				<Button title={'+'} onClick={addTaskHandler} isDisabled={!isTaskTitleValid}/>
-				{!isTaskTitleValid && <div>Max length is 15</div>}
+				{!isTaskTitleValid && <div className={'error-message'}>Max length is 15</div>}
 				{error && <div className={'error-message'}>{error}</div>}
 			</div>
 			{
@@ -88,9 +92,9 @@ export const Todolist = ({title, tasks, removeTask, addTask, changeTaskStatus}: 
 					: <ul ref={listRef}>
 						{filteredTasks.map((task) => {
 							return (
-							<li key={task.id} className={task.isDone ? 'is-done' : ''}>
+							<li key={task.id}>
 								<input type="checkbox" checked={task.isDone} onChange={e => changeTaskStatusHandler(task.id, e)}/>
-								<span>{task.title}</span>
+								<span className={task.isDone ? 'is-done' : ''}>{task.title}</span>
 								<Button title={'x'} onClick={() => removeTaskHandler(task.id)} />
 							</li>
 						)})}
