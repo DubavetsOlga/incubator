@@ -88,7 +88,7 @@ export const Todolist = ({title, tasks, removeTask, addTask, changeTaskStatus}: 
 			</div>
 			{
 				filteredTasks.length === 0
-					? <p>Тасок нет</p>
+					? <p>No tasks</p>
 					: <ul ref={listRef}>
 						{filteredTasks.map((task) => {
 							return (

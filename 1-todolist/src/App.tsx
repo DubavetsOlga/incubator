@@ -20,25 +20,15 @@ function App() {
 	]);
 
 	const removeTask = (taskId: string) => {
-		const filteredTasks = tasks.filter(task => {
-			return task.id !== taskId
-		});
-		setTasks(filteredTasks);
+		setTasks(tasks.filter(task => task.id !== taskId ));
 	}
 
 	const addTask = (title: string) => {
-		const newTask = {
-			id: v1(),
-			title,
-			isDone: false,
-		}
-		const newTasks = [newTask, ...tasks]
-		setTasks(newTasks)
+		setTasks([{ id: v1(), title, isDone: false, }, ...tasks])
 	}
 
 	const changeTaskStatus = (taskId: string, taskStatus: boolean) => {
-		const newState = tasks.map(t => (t.id == taskId ? { ...t, isDone: taskStatus } : t));
-		setTasks(newState);
+		setTasks(tasks.map(t => (t.id == taskId ? { ...t, isDone: taskStatus } : t)));
 	}
 
 	return (
